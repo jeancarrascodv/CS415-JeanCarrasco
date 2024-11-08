@@ -1,0 +1,12 @@
+version: '3'
+services:
+  main-container:
+    image: ubuntu
+    container_name: main_container
+    command: sleep infinity
+
+  secondary-container:
+    build:
+      context: ./secondary
+    container_name: secondary_container
+    command: sleep infinity
