@@ -1,0 +1,4 @@
+-- Create the database and a user
+CREATE DATABASE cs415;
+CREATE USER cs415apiuser WITH PASSWORD 'cs415ApiUserPass' SUPERUSER;
+GRANT ALL PRIVILEGES ON DATABASE cs415 TO cs415apiuser;
